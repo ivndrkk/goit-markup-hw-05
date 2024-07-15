@@ -671,7 +671,7 @@ footer .container{
 
 }
 
-.modal-form-input:focus .modal-form-icon{
+.modal-form-input-icon-container:focus-within .modal-form-icon {
     fill: #4D5AE5;
 }
 
@@ -708,15 +708,16 @@ footer .container{
 
 }
 
-.modal-form-checkbox-label{
+.modal-form-checkbox-label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-
+    display: flex;
+    align-items: center;
 }
 
-.modal-form-checkbox-label-checkbox{
+.modal-form-checkbox-label-checkbox {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -727,12 +728,14 @@ footer .container{
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
-
 }
 
-.modal-form-checkbox:checked .modal-form-checkbox-label-checkbox{
+.modal-form-checkbox:checked+.modal-form-checkbox-label .modal-form-checkbox-label-checkbox {
     background-color: #404bbf;
     border: none;
+}
+
+.modal-form-checkbox:checked+.modal-form-checkbox-label .modal-form-checkbox-label-checkbox .modal-form-checkbox-icon {
     fill: #F4F4FD;
 }
 .modal-form-link{
