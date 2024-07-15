@@ -494,33 +494,33 @@ footer .container{
     gap: 24px;
 }
 
-.footer-subscribe-label{
+.footer-subscribe-paragraph{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    margin-bottom: 16px;
 }
 
 .footer-subscribe-input{
     width: 264px;
     height: 40px;
     border-radius: 4px;
-    background-color: rgba(46, 47, 66, 0);
+    background-color: transparent;
     border: 1px solid #ffff;
-    padding: 8px 16px;
+    padding-left:16px;
     box-sizing: border-box;
-    color: #ffff;
+    color: #ffffff;
     font-weight: 400;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     font-size: 12px;
+    line-height: 2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-subscribe-input::placeholder{
-    color: #ffff;
+    color: #ffffff;
     font-weight: 400;
     letter-spacing: 0.02em;
     font-size: 12px;
@@ -528,24 +528,29 @@ footer .container{
 
 .footer-subscribe-button{
     background-color: #4D5AE5;
-    color: #ffff;
-    width: 165px;
+    color: #ffffff;
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
     border: none;
     font-size: 16px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     font-weight: 500;
     line-height: 1.5;
     padding: 8px 24px;
     box-sizing: border-box;
     display: flex;
-    gap: 16px;
+
     align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
 }
 
 .footer-subscribe-icon{
     fill:#ffff;
+    margin-left: 16px;
 }
 
 .modal-overlay{
@@ -559,8 +564,8 @@ footer .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*opacity: 0;
-    pointer-events: none;*/
+    opacity: 0;
+    pointer-events: none;
     transition: opacity 250ms ease-in-out;
 }
 
