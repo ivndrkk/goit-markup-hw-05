@@ -728,6 +728,7 @@ footer .container{
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
+    display: inline-flex;
 }
 
 .modal-form-checkbox:checked+.modal-form-checkbox-label .modal-form-checkbox-label-checkbox {
@@ -738,6 +739,12 @@ footer .container{
 .modal-form-checkbox:checked+.modal-form-checkbox-label .modal-form-checkbox-label-checkbox .modal-form-checkbox-icon {
     fill: #F4F4FD;
 }
+
+.modal-form-checkbox:checked+.modal-form-checkbox-label .modal-form-checkbox-label-checkbox .modal-form-checkbox-label-checkbox {
+    fill: #F4F4FD;
+}
+
+
 .modal-form-link{
     color: #4d5ae5;
 }
